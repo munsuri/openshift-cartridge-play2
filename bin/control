@@ -1,6 +1,8 @@
 #!/bin/bash -e
 
 function start {
+    export JAVA_HOME="${OPENSHIFT_DATA_DIR}jdk1.8.0_65"
+    export PATH=$JAVA_HOME/bin:$PATH
     cd $OPENSHIFT_REPO_DIR
     # build on first time
     [ -d target ] || build
@@ -19,6 +21,8 @@ function restart {
 }
 
 function build {
+    export JAVA_HOME="${OPENSHIFT_DATA_DIR}jdk1.8.0_65"
+    export PATH=$JAVA_HOME/bin:$PATH
     # Workaround for failure in npm install when a package in package.json
     # points to a git commit.
     # This issue occurs because we are running in the context of a
