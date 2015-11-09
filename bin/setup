@@ -7,3 +7,8 @@ curl http://downloads.typesafe.com/typesafe-activator/${activatorV}/typesafe-act
 unzip activator.zip
 rm activator.zip
 ln -s ${OPENSHIFT_DATA_DIR}/activator-dist-${activatorV} ${OPENSHIFT_DATA_DIR}/activator
+wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u65-b16/jdk-8u65-linux-x64.tar.gz
+tar -zxf jdk-8u65-linux-x64.tar.gz
+export JAVA_HOME="${OPENSHIFT_DATA_DIR}jdk1.8.0_65"
+export PATH=$JAVA_HOME/bin:$PATH
+rm jdk-8u65-linux-x64.tar.gz
