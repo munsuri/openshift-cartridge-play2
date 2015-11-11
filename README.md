@@ -14,7 +14,7 @@ Have a look at http://misto.ch/play-on-openshift/ ; at the moment you need to us
 
 ### From the web site
 
-In OpenShift, choose a downloaded cartridge, with the following URL : http://cartreflect-claytondev.rhcloud.com/reflect?github=munsuri/openshift-cartridge-play2&commit=play-2.3.0
+In OpenShift, choose a downloaded cartridge, with the following URL : http://cartreflect-claytondev.rhcloud.com/reflect?github=munsuri/openshift-cartridge-play2
 
 Note that it takes about 5 minutes to create the application since it will download the activator from typesafe and the initial build of the sample application takes a few minutes, depending on the load of the server.
 
