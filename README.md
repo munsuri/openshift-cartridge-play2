@@ -10,17 +10,17 @@ Note : now works with small OpenShift gears, the build script will use no more t
 
 ### Tutorial
 
-Have a look at http://misto.ch/play-on-openshift/ ; at the moment you need to use ```http://cartreflect-claytondev.rhcloud.com/reflect?github=tyrcho/openshift-cartridge-play2&commit=play-2.3.0``` since the master is not stable yet.
+Have a look at http://misto.ch/play-on-openshift/ ; at the moment you need to use ```http://cartreflect-claytondev.rhcloud.com/reflect?github=munsuri/openshift-cartridge-play2``` since the master is not stable yet.
 
 ### From the web site
 
-In OpenShift, choose a downloaded cartridge, with the following URL : http://cartreflect-claytondev.rhcloud.com/reflect?github=tyrcho/openshift-cartridge-play2&commit=play-2.3.0
+In OpenShift, choose a downloaded cartridge, with the following URL : http://cartreflect-claytondev.rhcloud.com/reflect?github=munsuri/openshift-cartridge-play2&commit=play-2.3.0
 
 Note that it takes about 5 minutes to create the application since it will download the activator from typesafe and the initial build of the sample application takes a few minutes, depending on the load of the server.
 
 ### command line (rhc)
 
-```rhc app create  myappForPlay  http://cartreflect-claytondev.rhcloud.com/reflect?github=tyrcho/openshift-cartridge-play2&commit=play-2.3.0```
+```rhc app create  myappForPlay  http://cartreflect-claytondev.rhcloud.com/reflect?github=munsuri/openshift-cartridge-play2```
 
 You might need to increase the timeout to let it the time to download the activator and build the application the first time.
 
