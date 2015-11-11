@@ -2,7 +2,7 @@
 
 # OpenShift Play Framework Cartridge
 
-Works with Play 2.3 and Activator : http://www.playframework.com/
+Works with Play 2.4.3 and Activator 1.3.6 minimal : http://www.playframework.com/
 
 ## Use it
 
